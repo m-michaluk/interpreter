@@ -1,0 +1,21 @@
+int[] test = [1,2,3];
+print(test);
+void change_array(int[] & A) {
+    A[1] = 90;
+}
+change_array(test);
+print(test); # [1,90,3]
+
+void copy_array(int[] A) {
+    A[1] = 9000;
+}
+copy_array(test);
+print(test); # [1,90,3]
+
+
+int[] test_ret_arr() {
+    return [1,2,3];
+}
+
+int[] X = test_ret_arr();
+print(X);

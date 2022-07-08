@@ -1,0 +1,5 @@
+int x = 10;
+if (x > 10) {
+   int x = 23; # allowed, local scope        
+}
+int x = 2137; # error

@@ -1,0 +1,13 @@
+# test return
+int fun3(bool f) {
+    if (f) {
+        return 42;
+    } else {
+        return 43;
+    }
+    print ("Nie wypisuje się");
+}
+int xx = fun3(true);
+int yy = fun3(false);
+print(xx); # 42
+print(yy); # 43

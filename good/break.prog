@@ -1,0 +1,15 @@
+# test break
+int x = 10;
+while (x < 20) {
+	print (x); # wypisze 10, 11, 12
+	x++;
+	if (x == 13) {
+		print("boooom");
+		break;
+	}
+	{
+		int x = 213;
+		print("local scope x") ;
+		print(x); # wypisze 213, 213, 213
+	}
+}

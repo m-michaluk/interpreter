@@ -1,0 +1,20 @@
+# przesłanianie funkcji i statyczne wiązanie
+
+int fun(int x) {
+    void fun(int x) {
+        print("Przesłaniam zewnętrzną funkcję");
+        print(x); # 99
+    }
+    fun(99);
+    print(x);
+}
+
+# Wypisuje:
+# Przesłaniam zewnętrzną funkcję
+# 99
+# 42
+fun(42);
+
+return; # wcześniejsze zakończenie programu
+
+print("Ala ma kota"); # nie wypisuje się

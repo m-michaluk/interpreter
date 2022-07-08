@@ -1,0 +1,12 @@
+# test continue
+bool flag = false;
+int i = 0;
+while (not flag) {
+	if (i < 10) {
+		i++;
+		continue;
+	} else {
+		flag = true;
+	}
+}
+print(i); # powinno wypisać 10

@@ -1,0 +1,5 @@
+void fun(bool a){
+   print(a);
+}
+int x;
+fun(x);

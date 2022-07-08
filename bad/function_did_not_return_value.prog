@@ -1,0 +1,6 @@
+int fun() {
+
+   print("I should return int");
+
+}
+int x = fun();

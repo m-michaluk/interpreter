@@ -1,0 +1,4 @@
+int fun(string& s) {
+   s = "abc";
+}
+fun("foo");

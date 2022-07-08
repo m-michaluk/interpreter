@@ -1,0 +1,7 @@
+void fun(bool a){
+   print(a);
+}
+void fun2() {
+    print("(::)");
+}
+fun(fun2);

@@ -1,0 +1,25 @@
+# Tablice
+
+# Deklaracja tablic
+# Poprzez inicjalizację literałem tablicowym:
+int[] A1 = [1,2,3];
+print(A1);
+
+# Podanie rozmiaru, zawartość tablicy jest niezainicjalizowana
+int[] A2[10];
+#print(A2[3]); # reference to uninitialized variable
+
+A2[1] = 20;
+print(A2);
+
+A2 = [6,7,8] ;
+print(A2);
+
+int n = 10;
+int[] A[10];
+int i = 0;
+while(i < n) {
+    A[i] = 100 + i;
+    i++;
+}
+print(A); # [100,101,102,103,104,105,106,107,108,109]

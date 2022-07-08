@@ -1,0 +1,9 @@
+int y = 20;
+
+int fun(int& x) {
+    x = 10;
+}
+
+print(y); # 20
+fun(y);
+print(y); # 10

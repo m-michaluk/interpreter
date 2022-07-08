@@ -1,0 +1,13 @@
+int x = 10, y = 20;
+void fun(int x) {
+    x = 99;
+    y = 999;
+    int y = 1000; # przesłanianie zmiennej globalne
+}
+print(x); # 10
+print(y); # 20
+
+fun(30);
+
+print(x) ; # 10
+print(y); # 999
